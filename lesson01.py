@@ -34,6 +34,8 @@ max_num = None
 
 while num > 0:
     max_num = num % 10
+    if max_num == 9:
+        break
     num //= 10
     if max_num < num % 10:
         max_num = num % 10
